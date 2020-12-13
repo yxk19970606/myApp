@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.help.SearchHelpItemsActivity">
+    <LinearLayout
+        android:background="#39BD88"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:hint="在这里搜索您的问题"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:drawableLeft="@mipmap/search"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/tv_back_to_helping"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+     <ListView
+         android:id="@+id/lv_question_item"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="15dp"
+         >
+
+
+     </ListView>
+</LinearLayout>
